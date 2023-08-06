@@ -1,0 +1,29 @@
+{
+  "name": "vite-plugin-import-map",
+  "version": "0.1.0",
+  "description": "Import packages from map for the vite plugin",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "npm run build -- --watch",
+    "build": "tsup src/index.ts --dts --format cjs,esm"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.8",
+    "tsup": "^7.2.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ywzhaiqi/vite-plugin-import-map.git"
+  }
+}
